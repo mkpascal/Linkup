@@ -8,8 +8,24 @@
 		<script src="http://jquery-websocket.googlecode.com/files/jquery.websocket-0.0.1.js"></script>
 		<script type="text/javascript">
 			var message = '';
+			var blinkStatus = 0;
+			
+			function blinkCursor() {
+				if (blinkStatus) 
+				{
+					$('#first_message').html(message + '_');
+					blinkStatus = 0;
+				}
+				else 
+				{
+					$('#first_message').html(message);
+					blinkStatus = 1;					
+				}
+			}
 			
 			$(document).ready(function() {
+				setInterval("blinkCursor();",400);
+			
 				if ("WebSocket" in window) {
 					var ws = new WebSocket("ws://localhost:8080");
 
