@@ -101,7 +101,16 @@
 				}
 
 				$('body').keypress(function (e) {
-					message += String.fromCharCode(e.keyCode);
+
+					if (e.keyCode == 8)
+					{
+						message = message.substr(0, message.length - 1);
+					}
+					else 
+					{
+						message += String.fromCharCode(e.keyCode);
+					}
+					
 					$('#first_message').html(message);
 					
 					ws.send(message);
