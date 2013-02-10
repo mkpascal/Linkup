@@ -1,0 +1,42 @@
+html {
+	height: 100%;	
+}
+
+body {
+	background-color: #eeeeee;
+	width: 100%;
+	margin: 0px;
+	height: 100%;
+	
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 200;
+	font-size: 20pt;
+}
+
+#menu {
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	height: 5%;
+	width: 100%;
+}
+
+#dialog {
+	margin: auto;
+	width:70%;
+	min-height:95%;
+}
+
+.message {
+	width: 100%;
+	margin-left: 0px;
+	color: #6f6f6f;
+}
+
+.author {
+	font-weight: 400;
+}
+
+#first_author {
+	color: #2f92e8;
+}
