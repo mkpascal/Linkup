@@ -1,7 +1,8 @@
 Linkup
 ======
 
-Linkup is a two-way message system using node.js & WebSocket.
+Linkup is a two-way message system using node.js & WebSocket. Before reading the code or testing the application, 
+please note this is a proof of concept.
 
 ## Usage ##
 
@@ -34,4 +35,4 @@ This project uses different tools/technologies including,
 
 ## License ##
 
-Closed source.
+Open Source.
